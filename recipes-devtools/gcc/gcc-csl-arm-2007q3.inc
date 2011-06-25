@@ -1,5 +1,10 @@
 require recipes-devtools/gcc/gcc-common.inc
 
+LICENSE = "GPL-2-with-GCC-exception"
+
+LIC_FILES_CHKSUM = "file://COPYING;md5=59530bdf33659b29e73d4adb9f9f6552 \
+                    file://COPYING.LIB;md5=2d5025d4aa3495befef8f17206a5b0a1 \
+                   "
 BINV = "4.2.1"
 PV = "4.2.1+csl-arm-2007q3-53"
 
