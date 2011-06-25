@@ -1,5 +1,3 @@
-PR = "r0"
-
 require gcc-${PV}.inc
-require gcc-configure-target.inc
-require gcc-package-target.inc
+require recipes-devtools/gcc/gcc-configure-target.inc
+require recipes-devtools/gcc/gcc-package-target.inc

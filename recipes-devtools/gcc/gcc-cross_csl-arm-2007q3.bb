@@ -1,9 +1,7 @@
-PR = "r5"
-
-require gcc-csl-arm-2008q1.inc
-require gcc-cross4.inc
-require gcc-configure-cross.inc
-require gcc-package-cross.inc
+require gcc-csl-arm-2007q3.inc
+require recipes-devtools/gcc/gcc-cross4.inc
+require recipes-devtools/gcc/gcc-configure-cross.inc
+require recipes-devtools/gcc/gcc-package-cross.inc
 
 SRC_URI_append = " file://zecke-no-host-includes.patch "
 
