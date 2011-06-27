@@ -18,3 +18,14 @@ S = "${WORKDIR}/linux-2.6.22"
 
 SRC_URI[kernel.md5sum] = "2e230d005c002fb3d38a3ca07c0200d0"
 SRC_URI[kernel.sha256sum] = "73c10604c53f1a6ee65ef805293d23903696f8cef864f42d7de9506f0d2ba4c7"
+
+
+# no perf in 2.6.22
+do_compile_perf() {
+    :
+}
+
+do_install_perf() {
+    :
+}
+
