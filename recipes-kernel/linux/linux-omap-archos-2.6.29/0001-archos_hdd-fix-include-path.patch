@@ -1,0 +1,26 @@
+From 6ea8806389f51e1f9dca66c2f65dc09d763136e9 Mon Sep 17 00:00:00 2001
+From: Koen Kooi <koen@dominion.thruhere.net>
+Date: Wed, 29 Jun 2011 16:27:46 +0200
+Subject: [PATCH] archos_hdd: fix include path
+
+Signed-off-by: Koen Kooi <koen@dominion.thruhere.net>
+---
+ drivers/usb/storage/archos_hdd.c |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/drivers/usb/storage/archos_hdd.c b/drivers/usb/storage/archos_hdd.c
+index b389d1f..d9d0d45 100644
+--- a/drivers/usb/storage/archos_hdd.c
++++ b/drivers/usb/storage/archos_hdd.c
+@@ -27,7 +27,7 @@
+ #include <scsi/scsi.h>
+ #include <scsi/scsi_cmnd.h>
+ #include <scsi/scsi_device.h>
+-#include <../../scsi/sd.h>
++#include "../../scsi/sd.h"
+ 
+ #include <mach/board-archos.h>
+ 
+-- 
+1.6.6.1
+
